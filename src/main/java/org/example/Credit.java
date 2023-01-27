@@ -35,7 +35,5 @@ public class Credit {
         String no2=sc.nextLine();
         Card c2=(Card) c1.clone();
         l.log(Level.SEVERE, () -> "The result is: " +c2.equalling(no2));
-
-
     }
 }
