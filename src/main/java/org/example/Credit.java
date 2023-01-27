@@ -10,7 +10,7 @@ class Card implements Cloneable{
      this.date=date;
      this.no1=no1;
     }
-    public boolean equal(String no2){
+    public boolean equalling(String no2){
         return no1.equals(no2);
     }
 
@@ -34,7 +34,8 @@ public class Credit {
         l.info("Enter the card number to check given card number is available:");
         String no2=sc.nextLine();
         Card c2=(Card) c1.clone();
-        l.info("The result is:"+c2.equal(no2));
+        l.log(Level.SEVERE, () -> "The result is: " +c2.equalling(no2));
+
 
     }
 }
