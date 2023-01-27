@@ -34,6 +34,6 @@ public class Credit {
         l.info("Enter the card number to check given card number is available:");
         String no2=sc.nextLine();
         Card c2=(Card) c1.clone();
-        l.log(Level.SEVERE, () -> "The result is: " +c2.equalling(no2));
+        l.log(Level.INFO, () -> "The result is: " +c2.equalling(no2));
     }
 }
