@@ -22,7 +22,7 @@ class Card implements Cloneable{
     }
 }
 public class Credit {
-    public static void main(String[] args) throws CloneNotSupportedException {
+    public static void main(String[] args) throws Exception {
         Scanner sc=new Scanner(System.in);
         Logger l=Logger.getLogger("com.api.jar");
         l.info("welcome guys");
