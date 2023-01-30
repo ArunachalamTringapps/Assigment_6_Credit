@@ -1,7 +1,7 @@
 package org.example;
 import java.util.*;
 import java.util.logging.*;
-class Card implements Cloneable{
+class Card {
     String name;
     int  no1;
     String date;
