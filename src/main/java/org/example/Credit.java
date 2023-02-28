@@ -1,33 +1,11 @@
 package org.example;
 import java.util.*;
 import java.util.logging.*;
-class Card {
-    String name;
-    int  no1;
-    String date;
-    Card(String name,int no1,String date){
-     this.name=name;
-     this.date=date;
-     this.no1=no1;
-    }
-    public boolean equalling(int no2){
-        String no4=String.valueOf(no2);
-        String no3=String.valueOf(no1);
-        return no3.equals(no4);
-    }
-    public Card cloneexample()  {
-        try {
-            return (Card) super.clone();
-        }catch (Exception ex){
-            return this;
-        }
 
-    }
-}
 public class Credit {
     public static void main(String[] args)  {
         Scanner sc=new Scanner(System.in);
-        Logger l=Logger.getLogger("com.api.jar");
+        Logger l=Logger.getLogger(Card.class.getName());
         l.info("welcome guys");
         try {
             l.info("Enter the cardholders name: ");
